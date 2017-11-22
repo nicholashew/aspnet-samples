@@ -1,6 +1,6 @@
 # ASP.NET Core Simple Serilog
 
-Web application to demonstrate implement rolling file logger with “Serilog” for .Net Core 1.1
+Web application to demonstrate implement rolling file logger with “Serilog” for .Net Core 2.0
 
 ## Setup
 
@@ -49,7 +49,7 @@ If you would like to manually install Serilog packages for your own project, go 
 ```
 PM> Install-Package Serilog.Sinks.RollingFile -Version 3.3.0
 
-PM> Install-Package Serilog.Extensions.Logging -Version 1.2.0
+PM> Install-Package Serilog.Extensions.Logging -Version 2.0.2
 
 PM> Install-Package Serilog.Enrichers.Environment -Version 2.1.2
 
