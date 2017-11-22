@@ -1,6 +1,6 @@
 # AspNet-Samples
 
-A collection ASP.NET sample projects.
+A collection of ASP.NET sample projects.
 
 ## Contributing
 
