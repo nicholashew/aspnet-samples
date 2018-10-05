@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SftpDataExport", "SftpDataExport\SftpDataExport.csproj", "{BFEEB713-206E-4EFE-B24A-3B81231D9DF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SftpDataExport.Tests", "SftpDataExport.Tests\SftpDataExport.Tests.csproj", "{801AE76D-FF4F-4212-996F-341325555D9B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BFEEB713-206E-4EFE-B24A-3B81231D9DF9} = {BFEEB713-206E-4EFE-B24A-3B81231D9DF9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFEEB713-206E-4EFE-B24A-3B81231D9DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEEB713-206E-4EFE-B24A-3B81231D9DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEEB713-206E-4EFE-B24A-3B81231D9DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEEB713-206E-4EFE-B24A-3B81231D9DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801AE76D-FF4F-4212-996F-341325555D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801AE76D-FF4F-4212-996F-341325555D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801AE76D-FF4F-4212-996F-341325555D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801AE76D-FF4F-4212-996F-341325555D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E44875EE-C298-4BE9-A5D8-F742F54D5C4F}
+	EndGlobalSection
+EndGlobal

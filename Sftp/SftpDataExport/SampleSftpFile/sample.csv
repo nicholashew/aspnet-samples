@@ -1,0 +1,81 @@
+SubscriberKey,OrderNumber,OrderXML
+foo@bar.com,PO001,"<root>
+ <order order-no=""PO001"" invoice-no=""IN001""></order>
+ <totals>
+  <disount>10.00</disount>
+  <gross-price>30.50</gross-price>
+ </totals>
+ <customer>
+  <customer-no>C001</customer-no>
+  <email>foo@bar.com</email>
+  <firstname>foo</firstname>
+  <lastname>bar</lastname>
+ </customer>
+ <products>
+  <product>
+   <product-id>P1</product-id>
+   <product-name>TV</product-name>
+   <quantity>1</quantity>
+   <net-price>1999.00</net-price>
+   <tax>20.00</tax>
+  </product>
+  <product>
+   <product-id>P2</product-id>
+   <product-name>Phone</product-name>
+   <quantity>2</quantity>
+   <net-price>888.00</net-price>
+   <tax>88</tax>
+  </product>
+ </products>
+</root>"
+foo2@bar.com,PO002,"<root>
+ <order order-no=""PO002"" invoice-no=""IN002""></order>
+ <totals>
+  <disount>20.00</disount>
+  <gross-price>10.50</gross-price>
+ </totals>
+ <customer>
+  <customer-no>C002</customer-no>
+  <email>foo2@bar.com</email>
+  <firstname>foo2</firstname>
+  <lastname>bar</lastname>
+ </customer>
+ <products>
+  <product>
+   <product-id>P33</product-id>
+   <product-name>iPhone 6</product-name>
+   <quantity>2</quantity>
+   <net-price>600.00</net-price>
+   <tax>60.00</tax>
+  </product>
+  <product>
+   <product-id>P6</product-id>
+   <product-name>iPhone Xs</product-name>
+   <quantity>5</quantity>
+   <net-price>8888.00</net-price>
+   <tax>999</tax>
+  </product>
+ </products>
+</root>"
+foo3@bar.com,PO003,"<root>
+ <order order-no=""PO003"" invoice-no=""IN003""></order>
+ <totals>
+  <disount>0.00</disount>
+  <gross-price>1800.00</gross-price>
+ </totals>
+ <customer>
+  <customer-no>C005</customer-no>
+  <email>foo3@bar.com</email>
+  <firstname>foo3</firstname>
+  <lastname>bar</lastname>
+ </customer>
+ <products>
+  <product>
+   <product-id>P99</product-id>
+   <product-name>Huawei P80 Pro</product-name>
+   <quantity>1</quantity>
+   <net-price>1800.00</net-price>
+   <tax>0.00</tax>
+  </product>
+ </products>
+</root>"

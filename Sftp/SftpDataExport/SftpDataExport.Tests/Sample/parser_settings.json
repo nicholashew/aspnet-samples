@@ -1,0 +1,107 @@
+﻿{
+  "mapping": [
+    {
+      "name": "Order",
+      "isLineItems": false,
+      "lineItemPath": "",
+      "map": [
+        {
+          "name": "OrderNumber",
+          "xPath": "order[@order-no]",
+          "attributeName": "order-no",
+          "output": "Attribute",
+          "isMandatory": true
+        },
+        {
+          "name": "InvoiceNumber",
+          "xPath": "order[@invoice-no]",
+          "attributeName": "invoice-no",
+          "output": "Attribute",
+          "isMandatory": false
+        },
+        {
+          "name": "Discount",
+          "xPath": "totals/disount",
+          "isMandatory": false
+        },
+        {
+          "name": "OrderTotal",
+          "xPath": "totals/gross-price",
+          "isMandatory": false
+        }
+      ]
+    },
+    {
+      "name": "Subscriber",
+      "isLineItems": false,
+      "lineItemPath": "",
+      "map": [
+        {
+          "name": "CustomerNumber",
+          "xPath": "customer/customer-no",
+          "isMandatory": false
+        },
+        {
+          "name": "EmailAddress",
+          "xPath": "customer/email",
+          "isMandatory": false
+        },
+        {
+          "name": "FirstName",
+          "xPath": "customer/firstname",
+          "isMandatory": false
+        },
+        {
+          "name": "LastName",
+          "xPath": "customer/lastname",
+          "isMandatory": false
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "isLineItems": true,
+      "lineItemPath": "products/product",
+      "map": [
+        {
+          "isRootXPath": true,
+          "name": "OrderNumber",
+          "xPath": "order[@order-no]",
+          "attributeName": "order-no",
+          "output": "Attribute",
+          "isMandatory": true
+        },
+        {
+          "isRootXPath": false,
+          "name": "ProductID",
+          "xPath": "product-id",
+          "isMandatory": true
+        },
+        {
+          "isRootXPath": false,
+          "name": "ProductName",
+          "xPath": "product-name",
+          "isMandatory": true
+        },
+        {
+          "isRootXPath": false,
+          "name": "Quantity",
+          "xPath": "quantity",
+          "isMandatory": false
+        },
+        {
+          "isRootXPath": false,
+          "name": "NetPrice",
+          "xPath": "net-price",
+          "isMandatory": false
+        },
+        {
+          "isRootXPath": false,
+          "name": "Tax",
+          "xPath": "tax",
+          "isMandatory": false
+        }
+      ]
+    }
+  ]
+}
