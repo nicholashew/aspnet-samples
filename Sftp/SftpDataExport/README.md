@@ -12,7 +12,7 @@ To prevent private settings being committed By Git, we decided to use the **"fil
 
 - Add the sensitive settings into `PrivateAppSettings.config` file, example:
 
-```
+```xml
 <appSettings>
   <add key="SftpHost" value="127.0.0.1" />
   <add key="SftpPort" value="22" />
@@ -70,9 +70,9 @@ By adding config in `parser_settings.json`, we can configure the parser mapping 
       "map": [
         {
           "name": "OrderNumber",
-          "xPath": "order[@order-no]", //the XML Path expression
-          "AttributeName": "order-no", //to define the attribute name for output
-          "Output": "Attribute", //to define where the output value from
+          "xPath": "order[@order-no]", //the-XML-Path-expression
+          "AttributeName": "order-no", //to-define-the-attribute-name-for-output
+          "Output": "Attribute", //to-define-where-the-output-value-from
           "isMandatory": true
         },
         {
@@ -84,12 +84,11 @@ By adding config in `parser_settings.json`, we can configure the parser mapping 
     },
     {
       "name": "Products",
-      "isLineItems": true, //set true to get listing result
-      "lineItemPath": "products/product", //set the line items XPATH
+      "isLineItems": true, //set-true-to-get-listing-result
+      "lineItemPath": "products/product", //set-the-line-items-XPATH
       "map": [
-        {
-          //set true so that we can select node from root instead of line items
-          "isRootXPath": true, 
+        {          
+          "isRootXPath": true, //set-true-so-that-we-can-select-node-from-root-instead-of-line-items
           "name": "OrderNumber",
           "xPath": "order[@order-no]",
           "AttributeName": "order-no",
