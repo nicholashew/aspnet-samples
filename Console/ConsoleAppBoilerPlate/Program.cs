@@ -34,8 +34,9 @@ namespace ConsoleAppBoilerPlate
                 bool isAnotherInstanceOpen = !mutex.WaitOne(AppSettings.AppTimerIntervalMiliSeconds);
                 if (isAnotherInstanceOpen)
                 {
+                    Console.WriteLine("Only one instance of this app is allowed.");
                     Log.Warn("Only one instance of this app is allowed.");
-                    SendSystemEmail("Multiple App Instance Denied", "Only one instance of this app is allowed.", false);
+                    //SendSystemEmail("Multiple App Instance Denied", "Only one instance of this app is allowed.", false);
                     return;
                 }
 
@@ -49,7 +50,7 @@ namespace ConsoleAppBoilerPlate
 
         static void RunProgram()
         {
-            string jobId = DateTime.Now.ToString("yyyyMMddhhmmss");
+            //string jobId = DateTime.Now.ToString("yyyyMMddhhmmss");
 
             try
             {
@@ -60,12 +61,12 @@ namespace ConsoleAppBoilerPlate
                 string message = EmailHelper.GetEmailContent("./MailTemplates/Sample.html", new Dictionary<string, string> {
                     { "*|Date|*", DateTime.Now.ToLongDateString() }
                 });
-                SendSystemEmail("RunProgram Task Completed", message);
+                SendSystemEmail("RunProgram Completed", message);
             }
             catch (Exception ex)
             {
                 Log.Error("RunProgram Error", ex);
-                SendSystemEmail("RunProgram Task Error", ex.ToString());
+                SendSystemEmail("RunProgram Error", ex.ToString());
             }
         }
 
